@@ -2,8 +2,8 @@ from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.db import transaction
-from petugas.models import Petugas
-from pelanggan.models import Pelanggan
+from app.petugas.models import Petugas
+from app.pelanggan.models import Pelanggan
 
 User = get_user_model()
 
