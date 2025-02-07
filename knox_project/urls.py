@@ -7,7 +7,8 @@ from .views import RootView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('knox.urls')),
+    path('auth/', include('knox.urls')),
     path('api/', RootView.as_view(), name="api-root"),
     path('pelanggan/', include('pelanggan.urls')),
+    path('profile/', include('user.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

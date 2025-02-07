@@ -1,6 +1,7 @@
+# user/urls.py
 from django.urls import path
-from user.views import ProfileUpdateView
+from .views import ProfileUpdateView
 
 urlpatterns = [
-    path('profile/', ProfileUpdateView.as_view(), name='profile-update'),
+    path('', ProfileUpdateView.as_view()),
 ]
