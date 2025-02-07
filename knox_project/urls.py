@@ -10,5 +10,10 @@ urlpatterns = [
     path('auth/', include('knox.urls')),
     path('api/', RootView.as_view(), name="api-root"),
     path('pelanggan/', include('pelanggan.urls')),
-    path('profile/', include('user.urls')),
+    path('petugas/', include('petugas.urls')),
+    path('kereta/', include('kereta.urls')),
+    path('gerbong/', include('gerbong.urls')),
+    path('kursi/', include('kursi.urls')),
+    path('jadwal/', include('jadwal.urls')),
+    path('tiket/', include('pembelian_tiket.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

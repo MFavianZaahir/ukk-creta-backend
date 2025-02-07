@@ -19,6 +19,12 @@ INSTALLED_APPS = [
     'user',
     'pelanggan',
     'petugas',
+    'kereta',
+    'jadwal',
+    'pembelian_tiket',
+    'gerbong',
+    'detail_pembelian',
+    'kursi',
 ]
 
 MIDDLEWARE = [
